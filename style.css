@@ -1,0 +1,34 @@
+body{
+    color: white;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    
+}
+header{
+    margin: 5%;
+}
+body p{   
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+main{
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+        "mockup"
+        "register";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items:start;
+    grid-gap: 5%;
+    margin: 5%;  
+}
+.register{
+    display: grid;
+    align-items: start;
+}
