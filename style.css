@@ -1,22 +1,32 @@
+
+html, body{
+    min-height: 100%;
+    height: 100%;
+}
 body{
     color: white;
     background-color: hsl(257, 40%, 49%);
     background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    width: 100vw;
+    
 }
 h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    
+    font-size: 30px;
 }
 header{
     margin: 5%;
 }
 body p{   
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: lighter;
+    line-height: 1.5em;
 }
 main{
-    height: auto;
     display: grid;
     grid-template-areas: 
         "mockup"
@@ -26,9 +36,43 @@ main{
     align-items: center;
     justify-items:start;
     grid-gap: 5%;
-    margin: 5%;  
+    margin: 5%; 
 }
 .register{
     display: grid;
     align-items: start;
+    height: 100%;
+    align-content: start;
+    padding: 10% 10% 0 0;
+    grid-gap:5%
+}
+button{
+    height: 3.5em;
+    width: 35%;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    border-style: none;
+    box-shadow: 0px 6px 15px 0px #00000073;
+}
+footer{
+    text-align: center;
+}
+@media screen and (max-width: 500px){
+    main{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .mockup{
+        display: flex;
+        justify-content: center;
+    }
+    .mockup img{
+        width: 80%;
+    }
+    .register{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
